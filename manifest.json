@@ -1,0 +1,15 @@
+{
+  "name": "Fire Pit Ring & Block Calculator \u2014 Circle Pavers, Lava Rock & Steel",
+  "short_name": "Fire Pit Calc",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#120905",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

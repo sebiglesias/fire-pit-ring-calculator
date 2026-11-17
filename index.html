@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fire Pit Ring & Block Calculator — Circle Pavers, Lava Rock & Steel — Accurate Material Estimator</title>
+  <meta name="description" content="Calculate exact trapezoidal retaining wall blocks per course, metal fire pit ring liners, and volcanic lava rock bags for DIY backyard fire pits.">
+  <link rel="canonical" href="https://sebiglesias.com.ar/fire-pit-ring-calculator/">
+  <meta name="theme-color" content="#f97316">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Fire Pit Ring & Block Calculator — Circle Pavers, Lava Rock & Steel">
+  <meta property="og:description" content="Calculate exact trapezoidal retaining wall blocks per course, metal fire pit ring liners, and volcanic lava rock bags for DIY backyard fire pits.">
+  <meta property="og:url" content="https://sebiglesias.com.ar/fire-pit-ring-calculator/">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2BNDBQP0W7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2BNDBQP0W7');
+  </script>
+
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="ca-pub-3381238987477190">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3381238987477190" crossorigin="anonymous"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Fire Pit Ring & Block Calculator \u2014 Circle Pavers, Lava Rock & Steel",
+    "url": "https://sebiglesias.com.ar/fire-pit-ring-calculator/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Calculate exact trapezoidal retaining wall blocks per course, metal fire pit ring liners, and volcanic lava rock bags for DIY backyard fire pits.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is a steel ring insert necessary inside a concrete block fire pit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standard concrete landscape pavers contain trapped moisture and are not rated for direct exposure to open wood fire flame. Without a protective steel fire ring insert leaving an air gap, the intense thermal shock will cause concrete blocks to crumble, crack, or even violently spall (explode)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should you put at the bottom of a DIY fire pit for drainage?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dig out 4 to 6 inches of soil beneath the fire pit and fill it with clean crushed #57 gravel or lava rock. This allows rainwater to freely drain away into the ground, preventing your fire pit from turning into a stagnant puddle of sooty mud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the ideal diameter for a backyard fire pit?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 36-inch inside diameter (yielding roughly a 50-inch outside diameter with blocks) is the most popular size. It accommodates standard 16-inch split firewood logs while allowing 6 to 8 people to comfortably sit in a circle close enough to converse without singeing."
+        }
+      }
+    ]
+  }
+]
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">🔥 Hardscape & Backyard Living</div>
+      <h1>Outdoor DIY Fire Pit Block & Ring Calculator</h1>
+      <p class="subtitle">Calculate retaining wall blocks per circular course, heavy-gauge steel ring insert diameter, and cubic feet of lava rock.</p>
+    </header>
+
+    <!-- AdSense Top Banner -->
+    <div style="text-align:center; margin: 16px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <main class="calc-grid">
+      <!-- Inputs Card -->
+      <form class="card" id="fire-pit-ring-calculator-form" onsubmit="event.preventDefault();">
+        <h2>📐 Fire Pit Diameter & Wall Height</h2>
+        
+        <div class="input-row">
+          <div class="form-group">
+            <label for="ringDia">Steel Fire Ring Inside Diameter</label>
+            <select id="ringDia">
+              <option value="30">30-Inch (Cozy / Compact Patio)</option>
+              <option value="36" selected>36-Inch (Standard Residential Fire Pit)</option>
+              <option value="42">42-Inch (Large Family Gathering)</option>
+              <option value="48">48-Inch (Extra Large Estate Fire Pit)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pitHeight">Finished Wall Height</label>
+            <select id="pitHeight">
+              <option value="12">12 Inches (3 Courses of 4" Blocks)</option>
+              <option value="16" selected>16 Inches (4 Courses — Standard Footrest Height)</option>
+              <option value="20">20 Inches (5 Courses — Tabletop Seat Height)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="form-group">
+            <label for="blockWidth">Block Front Width</label>
+            <select id="blockWidth">
+              <option value="11.5" selected>11.5-Inch (Wedge / Trapezoid Fire Pit Stone)</option>
+              <option value="9.0">9.0-Inch (Small Radius Curved Paver)</option>
+              <option value="12.0">12.0-Inch (Standard Mini Retaining Block)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="fillDepth">Base Lava Rock Depth</label>
+            <div class="input-wrap">
+              <input type="number" id="fillDepth" step="1" min="2" max="8" value="4">
+              <span class="input-suffix">inches</span>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Results Card -->
+      <div class="card">
+        <h2>🎯 Block & Material Requirements</h2>
+        
+        <div class="result-hero">
+          <div class="result-label">Total Retaining Blocks Required</div>
+          <div class="result-number" id="totalBlocks">52</div>
+          <div class="result-label" style="color:#ffffff;">Curved Concrete Blocks (4 Courses)</div>
+          <div style="font-size:0.95rem; color:#fed7aa; margin-top:6px;" id="blocksPerCourse">13 Blocks Per Circular Ring</div>
+        </div>
+
+        <div class="sub-hero-grid">
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Steel Fire Ring Insert</div>
+            <div class="sub-hero-val" id="steelRingSpec">36" Diameter</div>
+            <div class="sub-hero-sub">Heavy duty steel liner</div>
+          </div>
+          <div class="sub-hero-col">
+            <div class="sub-hero-label">Lava Rock / Fire Glass</div>
+            <div class="sub-hero-val" id="lavaBags">3 Bags</div>
+            <div class="sub-hero-sub">10 lb Bags (4" Base Depth)</div>
+          </div>
+        </div>
+
+        <div class="specs-grid">
+          <div class="spec-item">
+            <div class="spec-desc">Outside Wall Diameter</div>
+            <div class="spec-val" id="outsideDia">≈ 52 Inches</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Polyurethane Adhesive</div>
+            <div class="spec-val">2 Tubes (SRW / Titebond)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Drainage Gravel Base</div>
+            <div class="spec-val">4 Bags (0.5 cu ft)</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-desc">Steel Spark Screen Size</div>
+            <div class="spec-val" id="screenSpec">38" Mesh Dome</div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Amazon Supplies Box -->
+    <section class="supplies-card">
+      <h3>🛠️ Recommended Tools, Hardware & Building Supplies</h3>
+      <div class="supplies-grid">
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Pleasant Hearth 36-Inch Solid Steel Round Fire Pit Ring Insert</div>
+            <div class="supply-desc">Heavy-duty 1.5mm thick steel liner prevents intense fire heat from cracking concrete masonry blocks.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=pleasant+hearth+36+inch+fire+pit+ring&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Titebond Landscape Polyurethane Heavy Duty Block Adhesive (28 oz)</div>
+            <div class="supply-desc">High-temperature masonry adhesive bonds retaining wall stones securely against thermal expansion.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=titebond+landscape+block+adhesive&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Black Natural Lava Rock Granules for Gas & Wood Fire Pits (10 lb)</div>
+            <div class="supply-desc">Porous volcanic lava stone provides superior heat distribution and protects the base subsoil.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=natural+lava+rock+fire+pit+10lb&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+        <div class="supply-item">
+          <div>
+            <div class="supply-title">Sunnydaze 36" Heavy Duty Round Steel Fire Pit Spark Screen Cover</div>
+            <div class="supply-desc">Hinged mesh dome screen with top lift ring contains popping sparks and flying embers safely.</div>
+          </div>
+          <a href="https://www.amazon.com/s?k=sunnydaze+fire+pit+spark+screen+36+inch&tag=sebiglesias-20" target="_blank" rel="nofollow noopener" class="btn-amazon">Check on Amazon →</a>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:#94a3b8; margin-top:14px; margin-bottom:0; text-align:center;">
+        ⚖️ <em>Affiliate Notice: As an Amazon Associate, this site earns from qualifying purchases at no additional cost to you. We strictly link to trade-grade construction tools, hardware, and safety materials.</em>
+      </p>
+    </section>
+
+    <!-- FAQ Section for SEO -->
+    <section class="faq-section">
+      <h2 style="font-size:1.35rem; color:#ffffff; margin-bottom:16px;">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-q">Why is a steel ring insert necessary inside a concrete block fire pit?</div>
+        <div class="faq-a">Standard concrete landscape pavers contain trapped moisture and are not rated for direct exposure to open wood fire flame. Without a protective steel fire ring insert leaving an air gap, the intense thermal shock will cause concrete blocks to crumble, crack, or even violently spall (explode).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What should you put at the bottom of a DIY fire pit for drainage?</div>
+        <div class="faq-a">Dig out 4 to 6 inches of soil beneath the fire pit and fill it with clean crushed #57 gravel or lava rock. This allows rainwater to freely drain away into the ground, preventing your fire pit from turning into a stagnant puddle of sooty mud.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the ideal diameter for a backyard fire pit?</div>
+        <div class="faq-a">A 36-inch inside diameter (yielding roughly a 50-inch outside diameter with blocks) is the most popular size. It accommodates standard 16-inch split firewood logs while allowing 6 to 8 people to comfortably sit in a circle close enough to converse without singeing.</div>
+      </div>
+    </section>
+
+    <!-- Bottom AdSense Banner -->
+    <div style="text-align:center; margin: 32px 0;">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-3381238987477190"
+           data-ad-slot="auto"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <footer>
+      <p>© 2026 <a href="https://sebiglesias.com.ar/">sebiglesias.com.ar</a> · Fire Pit Ring & Block Calculator — Circle Pavers, Lava Rock & Steel. Educational and trade reference tool.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
